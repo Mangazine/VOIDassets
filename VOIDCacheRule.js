@@ -63,14 +63,14 @@
 
   // 缓存 Google 字体
   self.toolbox.router.get('/(.*)', self.toolbox.cacheFirst, {
-    origin: /(fonts\.yecdn\.com)/,
+    origin: /(fonts\.loli\.net)/,
     cache: {
       name: staticVendorCacheName,
       maxEntries: maxEntries
     }
   });
   self.toolbox.router.get('/(.*)', self.toolbox.cacheFirst, {
-    origin: /(fonts-gstatic\.yecdn\.com)/,
+    origin: /(gstatic\.loli\.net)/,
     cache: {
       name: staticVendorCacheName,
       maxEntries: maxEntries
